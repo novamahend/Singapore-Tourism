@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+		<title>Top-Rated Tourist Attraction in Singapore</title>
+		 <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<!-- jQuery lib-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<!--<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!--<script type="text/javascript" src="./JS/jquery-3.1.1.js"></script>-->
+		<link rel="stylesheet" href="./CSS/style.css">
+		<scr
+	</head>
+	<body>
+		<script src="./JS/script.js"></script>
+		<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS2pHtt72zWh59ScqxV6enhV-ujsgrZYE&callback=initMap">
+    	</script>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1 sidebar">
+					<ul class="nav nav-sidebar">
+						<li class="item-sidebar"><div><i class="material-icons" id="menu-icon">public</i><p>Browse</p></div></li>
+						<li class="item-sidebar"><div><i class="material-icons" id="menu-icon">visibility</i><p>Suggest Attraction</p></div></li>
+						<li class="item-sidebar"><div><i class="material-icons" id="menu-icon">ondemand_video</i><p>Video</p></div></li>
+						<li class="item-sidebar"><div><i class="material-icons" id="menu-icon">border_color</i><p>Blog</p></div></li>
+						<li class="item-sidebar"><div><i class="material-icons" id="menu-icon">info</i><p>About</p></div></li>
+					</ul>
+				</div>
+				<div class="col-md-2 navbar">
+					<ul class="nav nav-sidebar">
+						<li clas>Filter by favorite</li>
+						<li class="item-navbar" onclick="chooseDestination(0)">Merlion</li>
+						<li class="item-navbar" onclick="chooseDestination(1)">Marina Bay Sands</li>
+							<ul class="nav nav-sidebar">
+								<li class="subitem-navbar" onclick="chooseDestination(9)">ArtScience Museum</li>
+								<li class="subitem-navbar" onclick="chooseDestination(10)">Marina Bay Sands Skypark</li>
+								<li class="subitem-navbar" onclick="chooseDestination(11)">Double Helix Bridge</li>
+							</ul>
+						<li class="item-navbar" onclick="chooseDestination(2)" >Garden by the Bay</li>
+						<li class="item-navbar" onclick="chooseDestination(3)">China town</li>
+						<li class="item-navbar" onclick="chooseDestination(4)">Asian Civilisations Museum</li>
+						<li class="item-navbar" onclick="chooseDestination(5)">Clarke Quay</li>
+						<li class="item-navbar" onclick="chooseDestination(6)">Fort Canning Park</li>
+						<li class="item-navbar" onclick="chooseDestination(7)">Singapore Flyer</li>
+						<li class="item-navbar" onclick="chooseDestination(8)">Orchard Road</li>
+					</ul>
+				</div>
+				<div class="col-md-9 main">
+					<header class="pageTitle">
+						<div class="col-md-12 title" id="title">
+							TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE
+						</div>
+						<div class="col-md-2 icon">
+							<i class="material-icons" id="action-button">settings</i>
+							<i class="material-icons" id="action-button">help</i>
+							<i class="material-icons" id="action-button">cancel</i>
+						</div>	
+					</header>
+					<div class="col-md-9 map">
+					<div style="height:100%">
+						<div id="map" style="height:100%"></div>
+					</div>
+					</div>
+					<div class="col-md-3 asidebar" id="asidebar">
+						<div class="image">
+							<img id="place-image"/>
+						</div>
+						<div class="place-name" id="place-name">
+						</div>
+						<div class="description" id="description">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
